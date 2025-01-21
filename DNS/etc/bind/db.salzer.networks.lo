@@ -1,0 +1,16 @@
+$TTL 3d
+
+$ORIGIN salzer.networks.lo.
+
+@		IN	SOA	ns.salzer.networks.lo. admin.salzer.networks.lo.  (
+				20250102	;
+				24h		;
+				1h		;
+				200h		;
+				4d		;
+				)
+		IN	NS 	ns.salzer.networks.lo.
+ns 		IN 	A 	192.16.18.6
+;
+firewall	IN 	A 	192.168.20.1
+proxmox		IN	A 	192.16.18.2

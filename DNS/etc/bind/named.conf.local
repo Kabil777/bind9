@@ -1,0 +1,4 @@
+zone  "salzer.networks.lo"{
+	type master;
+	file "/etc/bind/db.salzer.networks.lo";
+};

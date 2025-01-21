@@ -1,0 +1,16 @@
+acl salzerInternalNetworks{
+	192.16.16.0/24;
+	192.16.17.0/24;
+	192.16.18.0/24;
+};
+
+options{
+	directory "/var/cache/bind";
+	forwarders{
+		1.1.1.1;
+		8.8.8.8;
+	};
+	allow-query { salzerInternalNetworks; };
+	recursion yes;
+	allow-recursion { salzerInternalNetworks; };
+};
